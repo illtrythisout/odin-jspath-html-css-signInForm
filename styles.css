@@ -9,6 +9,12 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Light.ttf);
+    font-weight: light;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -41,7 +47,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 #sidePanel {
-    width: 40%;
+    width: 30%;
     height: 100vh;
 
     position: relative;
@@ -64,7 +70,7 @@ p, h1, h2, h3, h4, h5, h6 {
 #main {
     --section-padding: var(--padding) var(--padding) var(--padding) calc(2 * var(--padding));
 
-    width: 100%;
+    width: 70%;
     background-color: var(--background-color);
 }
 
@@ -88,8 +94,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 #form {
-    display:  flex;
-
     height: 300px;
     padding: var(--section-padding);
 
@@ -98,11 +102,83 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 legend {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+ul > div {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(8px, 1rem, 24px);
+}
+
+ul {
+    display: flex;
+    gap: clamp(8px, 1.5rem, 40px);
+    align-items: stretch;
+}
+
+#names, #contact {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(8px, 1rem, 24px);
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+label {
+    display: block;
+    font-weight: light;
+    letter-spacing: 0.1rem;
+    font-size: 0.75rem;
+}
+
+input, textarea {
+    padding: 0.2rem;
+    font-size: 1rem;
+}
+input:focus, textarea:focus {
+    box-shadow: 0 0 10px 0 var(--background-color);
+}
+
+textarea {
+    flex-grow: 1;
+    resize: none;
 }
 
 #callToAction {
     height: calc(100% - 500px);
     padding: var(--section-padding);
+}
+
+button {
+    background-color: rgb(21, 77, 70);
+    color: white;
+    padding: 1rem 4rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#callToAction > p, #callToAction > a {
+    font-size: 1rem;
+}
+
+a:link, a:visited {
+    color: rgb(21, 77, 70);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(39, 94, 88);
 }
