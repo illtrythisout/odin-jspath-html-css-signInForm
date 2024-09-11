@@ -22,31 +22,36 @@ body {
 }
 
 section, div {
-    outline: red 1px solid;
+    /* outline: red 1px solid; */
 }
 
 #sidePanel {
     width: 30%;
     height: 100vh;
 
-    background-color: aqua;
+    background-image: url(./images/sidePanelBoat.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #main {
     --section-padding: clamp(8px, 1rem, 24px);
-
-    display: flex;
-    flex-direction: column;
 }
 
 #formDescription {
+    height: 200px;
     padding: var(--section-padding);
+
+    background-color: rgb(210, 235, 232);
 }
 
 #form {
+    height: 300px;
     padding: var(--section-padding);
 }
 
 #callToAction {
+    height: calc(100% - 500px);
     padding: var(--section-padding);
 }
