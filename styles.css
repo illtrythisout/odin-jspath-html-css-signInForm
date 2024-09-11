@@ -1,9 +1,21 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 
     color: rgb(0, 0, 30);
+    font-family: Roboto;
 }
 
 input, button, textarea, select {
@@ -20,7 +32,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 
 :root {
-    --padding: clamp(8px, 1rem, 24px);
+    --padding: clamp(8px, 2rem, 24px);
     --background-color: rgb(210, 235, 232);
 }
 
@@ -50,7 +62,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 #main {
-    --section-padding: var(--padding) var(--padding) var(--padding) calc(4 * var(--padding));
+    --section-padding: var(--padding) var(--padding) var(--padding) calc(2 * var(--padding));
 
     width: 100%;
     background-color: var(--background-color);
@@ -68,6 +80,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #formDescription > h1 {
     font-size: 3rem;
+    font-weight: bold;
 }
 
 #formDescription > p {
@@ -75,11 +88,18 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 #form {
+    display:  flex;
+
     height: 300px;
     padding: var(--section-padding);
 
     background-color: white;
     box-shadow: 0 0 20px 0 rgb(191, 191, 191);
+}
+
+legend {
+    font-size: 1em;
+    font-weight: bold;
 }
 
 #callToAction {
