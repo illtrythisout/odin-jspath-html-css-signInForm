@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+input, button, textarea, select {
     font: inherit;
 }
 
@@ -14,3 +17,36 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
 
+body {
+    display: flex;
+}
+
+section, div {
+    outline: red 1px solid;
+}
+
+#sidePanel {
+    width: 30%;
+    height: 100vh;
+
+    background-color: aqua;
+}
+
+#main {
+    --section-padding: clamp(8px, 1rem, 24px);
+
+    display: flex;
+    flex-direction: column;
+}
+
+#formDescription {
+    padding: var(--section-padding);
+}
+
+#form {
+    padding: var(--section-padding);
+}
+
+#callToAction {
+    padding: var(--section-padding);
+}
