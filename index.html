@@ -3,14 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up</title>
+    <title>Rent a Boat</title>
 </head>
 <body>
     <div id="side-panel"></div>
     <div id="main">
-        <section id="form-description"></section>
-        <section id="form"></section>
-        <section id="call-to-action"></section>
+        <section id="form-description">
+            <h1>Book your Boat</h1>
+            <p class="descrition">Experience this summer like no other</p>
+        </section>
+        <section id="form">
+            <form action="#" method="post">
+                <ul>
+                    <ol>
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </ol>
+                    <ol>
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </ol>
+                    <ol>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </ol>
+                    <ol>
+                        <label for="phoneNumber">PHONE NUMBER</label>
+                        <input type="number" id="phoneNumber" name="phoneNumber">
+                    </ol>
+                    <ol>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password">
+                    </ol>
+                    <ol>
+                        <label for="passwordConfirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="passwordConfirm" name="passwordConfirm">
+                    </ol>
+                </ul>
+            </form>
+        </section>
+        <section id="call-to-action">
+            <button type="submit">Create an Account</button>
+            <p>Already have an account? <a href="#">log in</a></p>
+        </section>
     </div>
 </body>
 </html>
