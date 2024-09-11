@@ -9,7 +9,7 @@
     <div id="side-panel"></div>
     <div id="main">
         <section id="form-description">
-            <h1>Book your Boat</h1>
+            <h1>Book Your Boat</h1>
             <p class="descrition">Experience this summer like no other</p>
         </section>
         <section id="form">
@@ -17,33 +17,29 @@
                 <ul>
                     <ol>
                         <label for="firstName">FIRST NAME</label>
-                        <input type="text" id="firstName" name="firstName">
+                        <input type="text" id="firstName" name="firstName" required>
                     </ol>
                     <ol>
                         <label for="lastName">LAST NAME</label>
-                        <input type="text" id="lastName" name="lastName">
+                        <input type="text" id="lastName" name="lastName" required>
                     </ol>
                     <ol>
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </ol>
                     <ol>
                         <label for="phoneNumber">PHONE NUMBER</label>
-                        <input type="number" id="phoneNumber" name="phoneNumber">
+                        <input type="number" id="phoneNumber" name="phoneNumber" required>
                     </ol>
                     <ol>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
-                    </ol>
-                    <ol>
-                        <label for="passwordConfirm">CONFIRM PASSWORD</label>
-                        <input type="password" id="passwordConfirm" name="passwordConfirm">
+                        <label for="comment">ADD A MESSAGE</label>
+                        <textarea name="comment" id="comment"></textarea>
                     </ol>
                 </ul>
             </form>
         </section>
         <section id="call-to-action">
-            <button type="submit">Create an Account</button>
+            <button type="submit">Book Your Boat</button>
             <p>Already have an account? <a href="#">log in</a></p>
         </section>
     </div>
